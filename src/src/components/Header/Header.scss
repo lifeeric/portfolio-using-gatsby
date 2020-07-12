@@ -1,0 +1,47 @@
+.header-container {
+  margin-top: 40px;
+  width: 100%;
+}
+
+/** Navigation */
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /** Profile Image */
+  &__profile {
+    border-radius: 50px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #b100c2;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1)
+    }
+
+
+    /** Img */
+    &__img {
+      border: 2px solid #e6e2e2;
+      border-radius: 50px;
+    }
+  }
+}
+
+
+
+/** Responsive */ 
+@media (max-width: 600px) {
+    .header-container {
+      margin-top: 25px;
+    }
+    .navigation {
+        flex-direction: row-reverse;
+        margin: 0;
+    }
+}

@@ -1,0 +1,36 @@
+/** List */
+.navigation {
+  &__list {
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+    transition: all 0.5s;
+    z-index: 1;
+  }
+
+  &__burger {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .navigation {
+    &__list {
+      background-color: #cccccc;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: 0px;
+      bottom: 0;
+    }
+
+    &__burger {
+      display: block;
+      position: absolute;
+      margin-top: 15px;
+      margin-left: -8px;
+      right: 10px;
+      top: -10px;
+    }
+  }
+}
