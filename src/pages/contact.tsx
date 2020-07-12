@@ -1,4 +1,5 @@
 import * as React from "react"
+import NProgress from "nprogress"
 import { useState } from "react"
 import { Layout } from "../layout/layout"
 import { HeadingTitle } from "../components/HeadingTitle/HeadingTitle"
@@ -28,9 +29,17 @@ const contact__message = css`
   color: #666666;
   font-size: 35px;
 `
+
 export default () => {
   const [isOpen, setIsOpen] = useState<Boolean>(false)
-
+  /** Start Loading page */
+  NProgress.start()
+  React.useEffect(() => {
+    NProgress.done()
+    return () => {
+      NProgress.remove()
+    }
+  })
   const sideDrawerHandler = (): void => {
     setIsOpen(true)
   }
@@ -79,7 +88,7 @@ export default () => {
 
       <div css={contact__icon}>
         <FontAwesomeIcon className="icon" icon={["fab", "whatsapp"]} />
-        <Obfuscate target="_blank" href="https://wa.me/15551234567">
+        <Obfuscate target={"_blank"} href="https://wa.me/15551234567">
           Chat On WhatsApp
         </Obfuscate>
       </div>

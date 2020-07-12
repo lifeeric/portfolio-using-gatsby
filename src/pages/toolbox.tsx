@@ -1,5 +1,6 @@
 import * as React from "react"
-import { useState, MouseEvent } from "react"
+import NProgress from "nprogress"
+import { useState } from "react"
 import { Layout } from "../layout/layout"
 import { HeadingTitle } from "../components/HeadingTitle/HeadingTitle"
 import { SkillList } from "../components/SkillList/SkillList"
@@ -8,6 +9,15 @@ import { SkillList } from "../components/SkillList/SkillList"
 import { jsx, css } from "@emotion/core"
 
 export default function Toolbox() {
+  /** Start Loading page */
+  NProgress.start()
+  React.useEffect(() => {
+    NProgress.done()
+    return () => {
+      NProgress.remove()
+    }
+  })
+
   const [skills] = useState([
     {
       id: 1,
@@ -164,7 +174,8 @@ export default function Toolbox() {
       label: "GraphQL",
       description:
         " GraphQL is a query language for your API, and a server-side runtime for executing queries by using a type system you define for your data.",
-        comment: "The Graphcool framework and its Cloud service manages the GraphQL backend for my app."
+      comment:
+        "The Graphcool framework and its Cloud service manages the GraphQL backend for my app.",
     },
     {
       id: 24,

@@ -8,10 +8,12 @@ type Props = {
   children: JSX.Element[] | JSX.Element
 }
 
-export const Layout: React.FC<Props> = ({ children }) => (
-  <main>
-    <Header />
-    <div className="contentBox">{children}</div>
-    <Footer />
-  </main>
-)
+export const Layout: React.FC<Props> = ({ children }) => {
+  return (
+    <main>
+      <Header />
+      <div className="contentBox">{children}</div>
+      <Footer />
+    </main>
+  )
+}

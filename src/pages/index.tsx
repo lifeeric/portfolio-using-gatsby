@@ -1,4 +1,5 @@
 import * as React from "react"
+import NProgress from "nprogress"
 import "./index.scss"
 import { Layout } from "../layout/layout"
 import { HeadingTitle } from "../components/HeadingTitle/HeadingTitle"
@@ -6,7 +7,7 @@ import { HeadingTitle } from "../components/HeadingTitle/HeadingTitle"
 import { jsx, css } from "@emotion/core"
 import { CircleButton } from "../components/CircleButton/CircleButton"
 import { SkewDrawer } from "../components/SkewDrawer/SkewDrawer"
-import '../utils/fontawesome';
+import "../utils/fontawesome"
 
 // Styling
 const content__name = css({
@@ -43,6 +44,15 @@ const siteContent = (
 export default function App() {
   const [isOpen, setIsOpen] = React.useState<Boolean>(false)
 
+  /** Start Loading page */
+  if (!isOpen) NProgress.start()
+
+  React.useEffect(() => {
+    NProgress.done()
+    return () => {
+      NProgress.remove()
+    }
+  })
   const sideDrawerHandler = () => {
     setIsOpen(true)
   }
@@ -53,7 +63,8 @@ export default function App() {
         <h2 css={content__name}>Hi, it's Eric</h2>
         <HeadingTitle>I'm front-end web developer</HeadingTitle>
         <h2 css={content__about}>
-          I build web interfaces <CircleButton icon={["fa", "info"]} onOpen={sideDrawerHandler} />
+          I build web interfaces{" "}
+          <CircleButton icon={["fa", "info"]} onOpen={sideDrawerHandler} />
         </h2>
         <SkewDrawer
           isOpen={isOpen}
