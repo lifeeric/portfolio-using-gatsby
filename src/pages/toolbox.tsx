@@ -1,5 +1,4 @@
 import * as React from "react"
-// import NProgress from "nprogress"
 import { useState } from "react"
 import { Layout } from "../layout/layout"
 import { HeadingTitle } from "../components/HeadingTitle/HeadingTitle"
@@ -7,17 +6,9 @@ import { SkillList } from "../components/SkillList/SkillList"
 
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core"
+import { SEO } from "../components/SEO/SEO"
 
 export default function Toolbox() {
-  /** Start Loading page */
-  // NProgress.start()
-  // React.useEffect(() => {
-  //   NProgress.done()
-  //   return () => {
-  //     NProgress.remove()
-  //   }
-  // })
-
   const [skills] = useState([
     {
       id: 1,
@@ -227,6 +218,7 @@ export default function Toolbox() {
 
   return (
     <Layout>
+      <SEO title={"Ericlife Skills"} />
       <HeadingTitle sm>
         These are pieces of <span className="bold">my toolbox</span>
       </HeadingTitle>

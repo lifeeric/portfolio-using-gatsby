@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { jsx, css } from "@emotion/core"
 import { CircleButton } from "../components/CircleButton/CircleButton"
 import { SkewDrawer } from "../components/SkewDrawer/SkewDrawer"
+import { SEO } from "../components/SEO/SEO"
 
 const contact__icon = css`
   padding: 4px 0;
@@ -56,6 +57,7 @@ export default () => {
 
   return (
     <Layout>
+      <SEO title={"Ericlife Contact us"} />
       <HeadingTitle sm>
         <span className="bold">You can get in touch</span> anytime through
       </HeadingTitle>

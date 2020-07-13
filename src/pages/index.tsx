@@ -7,6 +7,7 @@ import { jsx, css } from "@emotion/core"
 import { CircleButton } from "../components/CircleButton/CircleButton"
 import { SkewDrawer } from "../components/SkewDrawer/SkewDrawer"
 import "../utils/fontawesome"
+import { SEO } from "../components/SEO/SEO"
 
 // Styling
 const content__name = css({
@@ -49,6 +50,15 @@ export default function App() {
 
   return (
     <Layout>
+      <SEO
+        title={"I am a front-end developer"}
+        description={[
+          {
+            name: "description",
+            content: `I build web interfaces using: JavaScrip, ES2015, Babel, HTML5, CSS, CSS3, BEM, React, Gatsby, Webpack ...`,
+          },
+        ]}
+      />
       <div className="content">
         <h2 css={content__name}>Hi, it's Eric</h2>
         <HeadingTitle>I'm front-end web developer</HeadingTitle>
