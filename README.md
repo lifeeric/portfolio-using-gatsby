@@ -16,6 +16,7 @@
 -   [gatsby-plugin-react-helmet](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-react-helmet)
 -   [gatsby-plugin-netlify](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-netlify)
 -   [gatsby-plugin-nprogress](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-nprogress)
+- [gatsby-plugin-nprogress](https://www.gatsbyjs.org/packages/gatsby-plugin-nprogress/)
 - [gatsby-plugin-typescript](https://www.gatsbyjs.org/packages/gatsby-plugin-typescript/)
 -   [autoprefixer](https://github.com/postcss/autoprefixer)
 -   [react-icons](https://github.com/gorangajic/react-icons)
@@ -29,3 +30,6 @@
 3.  Install dependencies `yarn add pkg.json`
 4.  Use gatsby-cli to start in development mode ([docs](https://www.gatsbyjs.org/docs/))
 5.  Have fun.
+
+
+#### [Original Repo here](https://github.com/greglobinski/www.greglobinski.com)

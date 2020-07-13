@@ -1,5 +1,4 @@
 import * as React from "react"
-import NProgress from "nprogress"
 import "./index.scss"
 import { Layout } from "../layout/layout"
 import { HeadingTitle } from "../components/HeadingTitle/HeadingTitle"
@@ -44,15 +43,6 @@ const siteContent = (
 export default function App() {
   const [isOpen, setIsOpen] = React.useState<Boolean>(false)
 
-  /** Start Loading page */
-  if (!isOpen) NProgress.start()
-
-  React.useEffect(() => {
-    NProgress.done()
-    return () => {
-      NProgress.remove()
-    }
-  })
   const sideDrawerHandler = () => {
     setIsOpen(true)
   }

@@ -1,5 +1,5 @@
 import * as React from "react"
-import NProgress from "nprogress"
+// import NProgress from "nprogress"
 import { useState } from "react"
 import { Layout } from "../layout/layout"
 import { HeadingTitle } from "../components/HeadingTitle/HeadingTitle"
@@ -10,13 +10,13 @@ import { jsx, css } from "@emotion/core"
 
 export default function Toolbox() {
   /** Start Loading page */
-  NProgress.start()
-  React.useEffect(() => {
-    NProgress.done()
-    return () => {
-      NProgress.remove()
-    }
-  })
+  // NProgress.start()
+  // React.useEffect(() => {
+  //   NProgress.done()
+  //   return () => {
+  //     NProgress.remove()
+  //   }
+  // })
 
   const [skills] = useState([
     {
