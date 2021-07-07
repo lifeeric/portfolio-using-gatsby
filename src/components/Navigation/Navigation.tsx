@@ -1,8 +1,8 @@
 import * as React from "react"
 import { useCallback } from "react"
 
-import Burger from "react-css-burger"
-import '../../utils/fontawesome'
+import Burger from "@lifeeric/react-css-burger"
+import "../../utils/fontawesome"
 import { NavigationItem } from "./NavigationItem/NavigationItem"
 import "./Navigation.scss"
 
@@ -13,22 +13,22 @@ export const Navigation: React.FC = () => {
     {
       name: "Home",
       icon: ["fa", "home"],
-      link: '/'
+      link: "/",
     },
     {
       name: "Toolbox",
       icon: ["fa", "wrench"],
-      link: '/toolbox'
+      link: "/toolbox",
     },
     {
       name: "Playground",
       icon: ["fa", "paper-plane"],
-      link: '/playground'
+      link: "/playground",
     },
     {
       name: "Contact",
       icon: ["fa", "envelope"],
-      link: '/contact'
+      link: "/contact",
     },
   ]
 

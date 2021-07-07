@@ -1,1 +1,1 @@
-declare module 'react-css-burger'
+declare module "@lifeeric/react-css-burger"
