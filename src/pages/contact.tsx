@@ -47,7 +47,7 @@ export default () => {
       </p>
       <p>
         If you realize that I would be a good fit, drop me a message at
-        <strong> rcobb2@mail.ccsf.edu</strong>.
+        <strong> hi@ericgit.me</strong>.
       </p>
       <p>
         Thank you, <br /> <strong>Eric</strong>
@@ -64,25 +64,25 @@ export default () => {
 
       <div css={contact__icon}>
         <FontAwesomeIcon className="icon" icon={["fas", "phone"]} />
-        <Obfuscate tel="(202) 224-5744" />
+        <Obfuscate tel="(504) 384-5021" />
       </div>
 
       <div css={contact__icon}>
         <FontAwesomeIcon className="icon" icon={["fas", "envelope"]} />
         <Obfuscate
-          email="hello@coston.io"
+          email="hi@ericgit.me"
           headers={{
-            cc: "kate@acidburn.af",
-            bcc: "tanderson@metacortex.net",
-            subject: "react-obfuscate",
-            body: "Down with the machines!",
+            cc: "",
+            bcc: "",
+            subject: "",
+            body: "",
           }}
         />
       </div>
 
       <div css={contact__icon}>
         <FontAwesomeIcon className="icon" icon={["fab", "whatsapp"]} />
-        <Obfuscate target={"_blank"} href="https://wa.me/15551234567">
+        <Obfuscate target={"_blank"} href="https://wa.me/15043845021">
           Chat On WhatsApp
         </Obfuscate>
       </div>
