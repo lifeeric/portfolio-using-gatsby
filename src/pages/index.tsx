@@ -35,7 +35,7 @@ const siteContent = (
     </p>
     <p>
       If you realize that I would be a good fit, drop me a message at
-      <strong> rcobb2@mail.ccsf.edu</strong>.
+      <strong> hi@ericgit.me</strong>.
     </p>
     <p>Thank you. Now, you're free to go further.</p>
   </>
